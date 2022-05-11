@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+    <link href="style.css" rel="stylesheet">
+    <title>Vector Visulaizor</title>
+</head>
+<body>
+    <div id="vectors-container">
+        <div id="vectors">
+
+        </div>
+    </div>
+    <div id="plane-data">
+        <div id="calculations">
+            <div id="calculations__op">
+                <div class="calculations__parameter">
+                    <span class="calculations__para-title">Operation:</span>
+                    <select name="op" id="calculations__op">
+                        <option value="+">+</option>
+                        <option value="-">-</option>
+                        <option value="×">×</option>
+                        <option value="r">Rotate </option>
+                    </select>
+                </div>
+            </div>
+            <div class="calculations__matrix-container">
+                <div class="calculations__parameter">
+                    <span class="calculations__para-title">Matrix #1:</span>
+                    <select name="m1" id="matrix-1"></select>
+                </div>
+                <div class="calculations__selected-matrix">
+
+                </div>
+            </div>
+            <div class="calculations__matrix-container">
+                <div class="calculations__parameter">
+                    <span class="calculations__para-title">Matrix #2:</span>
+                    <select name="m2" id="matrix-2"></select>
+                </div>
+                <div class="calculations__selected-matrix">
+
+                </div>
+            </div>
+            <div id="calculations__result">
+                <div class="calculations__parameter">
+                    <span class="calculations__para-title">Result</span>
+                    <button>Calculate</button>
+                </div>
+                <div id="result__res-value">
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.4.1/p5.min.js" integrity="sha512-NxocnqsXP3zm0Xb42zqVMvjQIktKEpTIbCXXyhBPxqGZHqhcOXHs4pXI/GoZ8lE+2NJONRifuBpi9DxC58L0Lw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="index.js"></script>
+    <script src="./modules/DrawingFunctions.mjs"></script>
+</body>
+</html>
